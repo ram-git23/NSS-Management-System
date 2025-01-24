@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container-fluid h-50 d-inline-flex py-1 fs-7 overflow-hidden"
+        style="background-color: var(--primary_1)"
+      >
+        <img src="assets/icons/location_icon.svg" height="20" class="px-1" />
+        <div>
+          St Joseph's University, 36, Lalbagh Road, Bengaluru-560027, Karnataka,
+          India.
+        </div>
+      </div>
+      <div class="row align-items-center text-center py-1">
+        <!-- Logo 1 -->
+        <div class="col-1 mx-auto">
+          <div class="ratio ratio-1x1" style="max-width: 150px">
+            <img
+              src="assets/icons/sju_logo.png"
+              class="img-fluid"
+              style="object-fit: contain"
+              alt="SJU Logo"
+            />
+          </div>
+        </div>
+
+        <!-- Text Section -->
+        <div class="col-9">
+          <div class="d-flex flex-column justify-content-around lh-1 break">
+            <div class="fw-bold head">ST JOSEPH'S UNIVERSITY</div>
+            <div class="fw-bold head">ಸೇಂಟ್ ಜೋಸೆಫ್ ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
+            <div class="head" style="color: var(--primary_blue)">
+              NATIONAL SERVICE SCHEME
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo 2 -->
+        <div class="col-1 mx-auto">
+          <div class="ratio ratio-1x1" style="max-width: 150px">
+            <img
+              src="assets/icons/nss_logo.png"
+              class="img-fluid"
+              style="object-fit: contain"
+              alt="NSS Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-sm navbar-dark"
+      style="background-color: var(--primary_blue)"
+    >
+      <div class="container-fluid d-flex justify-content-between">
+        <!-- Toggler for collapsing links -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Section for all links except LOGIN -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav me-auto">
+            <a class="nav-item nav-link active" aria-current="page" href="#"
+              >HOME</a
+            >
+            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+            <a class="nav-item nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-item nav-link" href="announcements.html">ANNOUNCEMENTS</a>
+          </div>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="apply.html">APPLY</a>
+          </div>
+        </div>
+
+        <!-- Non-Collapsible Section for LOGIN (Right-aligned) -->
+        <div class="navbar-nav d-flex">
+          <a class="nav-item nav-link" href="login.html">LOGIN</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel  -->
+
+    <div
+      id="robotcarousel"
+      class="carousel slide"
+      data-bs-interval="5000"
+      data-pause="true"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#robotcarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#robotcarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#robotcarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="assets/carousel/img1.png"
+            alt="img1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/carousel/img2.png"
+            alt="img2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="assets/carousel/img3.png"
+            alt="img3"
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#robotcarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#robotcarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Content -->
+
+    <div class="container">
+      The National Service Scheme (NSS) is a Central Sector Scheme of Government
+      of India, Ministry of Youth Affairs & Sports. It provides opportunity to
+      the student youth of 11th & 12th Class of schools at +2 Board level and
+      student youth of Technical Institution, Graduate & Post Graduate at
+      colleges and University level of India to take part in various
+      government-led community service activities & programmes. The sole aim of
+      the NSS is to provide hands-on experience to young students in delivering
+      community service.
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid" style="background-color: var(--primary_blue)">
+      <div class="container text-light">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 mt-5"
+        >
+            <div class="d-flex gap-5 col mb-2">
+              <a
+                href="/"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img
+                  src="assets/icons/nss_logo.png"
+                  height="100"
+                  width="100"
+                  style="object-fit: contain"
+                />
+              </a>
+              <a
+                href="/"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img
+                  src="assets/icons/sju_logo.png"
+                  height="100"
+                  width="100"
+                  style="object-fit: contain"
+                />
+              </a>
+            </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Explore</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="home.html" class="nav-link p-0 text-light">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link p-0 text-light">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contact.html" class="nav-link p-0 text-light">Contact</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="announcements.html" class="nav-link p-0 text-light">Announcements</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Portal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="apply.html" class="nav-link p-0 text-light">Apply</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="login.html" class="nav-link p-0 text-light">Login</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="mb-2">
+                Phone: 12211122121
+              </li>
+              <li class="mb-2">
+                Email: <a href="mailto:nss@sju.edu.in" class="text-decoration-none text-light">nss@sju.edu.in</a>
+              </li>
+              <li class="mb-2">
+                Address: St Joseph's University, 36, Lalbagh Road, Bengaluru-560027, Karnataka, India.
+              </li>
+            </ul>
+          </div>
+          
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+          <p>&copy; 2025 St Joseph's University. All rights reserved.</p>
+          <div class="list-unstyled d-flex">
+            <a href="#"><img src="assets/icons/youtube.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/facebook.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/x_icon.svg" height="25" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/instagram.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

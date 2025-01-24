@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container-fluid h-50 d-inline-flex py-1 fs-7 overflow-hidden"
+        style="background-color: var(--primary_1)"
+      >
+        <img src="assets/icons/location_icon.svg" height="20" class="px-1" />
+        <div>
+          St Joseph's University, 36, Lalbagh Road, Bengaluru-560027, Karnataka,
+          India.
+        </div>
+      </div>
+      <div class="row align-items-center text-center py-1">
+        <!-- Logo 1 -->
+        <div class="col-1 mx-auto">
+          <div class="ratio ratio-1x1" style="max-width: 150px">
+            <img
+              src="assets/icons/sju_logo.png"
+              class="img-fluid"
+              style="object-fit: contain"
+              alt="SJU Logo"
+            />
+          </div>
+        </div>
+
+        <!-- Text Section -->
+        <div class="col-9">
+          <div class="d-flex flex-column justify-content-around lh-1 break">
+            <div class="fw-bold head">ST JOSEPH'S UNIVERSITY</div>
+            <div class="fw-bold head">ಸೇಂಟ್ ಜೋಸೆಫ್ ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
+            <div class="head" style="color: var(--primary_blue)">
+              NATIONAL SERVICE SCHEME
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo 2 -->
+        <div class="col-1 mx-auto">
+          <div class="ratio ratio-1x1" style="max-width: 150px">
+            <img
+              src="assets/icons/nss_logo.png"
+              class="img-fluid"
+              style="object-fit: contain"
+              alt="NSS Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-sm navbar-dark"
+      style="background-color: var(--primary_blue)"
+    >
+      <div class="container-fluid d-flex justify-content-between">
+        <!-- Toggler for collapsing links -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Section for all links except LOGIN -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav me-auto">
+            <a class="nav-item nav-link" href="home.html"
+              >HOME</a
+            >
+            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+            <a class="nav-item nav-link" href="contact.html" >CONTACT</a>
+            <a class="nav-item nav-link" href="announcements.html">ANNOUNCEMENTS</a>
+          </div>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#" aria-current="page">APPLY</a>
+          </div>
+        </div>
+
+        <!-- Non-Collapsible Section for LOGIN (Right-aligned) -->
+        <div class="navbar-nav d-flex">
+          <a class="nav-item nav-link" href="login.html">LOGIN</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content  -->
+     <div class="container mt-4">
+        <!-- <span class="display-6 fw-normal">Register For NSS Volunteer</span> -->
+        <form>
+            <div class="mb-3">
+                <label for="registerNo" class="form-label">Register No</label>
+                <input type="text" class="form-control" id="registerNo" placeholder="222BCAA42">
+            </div>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Leo">
+            </div>
+            <div class="mb-3">
+                <label for="fatherName" class="form-label">Father Name</label>
+                <input type="text" class="form-control" id="fatherName" placeholder="Antony">
+            </div>
+            <div class="mb-3">
+                <label for="motherName" class="form-label">Mother Name</label>
+                <input type="text" class="form-control" id="motherName" placeholder="Angel">
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone No</label>
+                <input type="number" class="form-control" id="phoneNumber" placeholder="987xxxxx13">
+            </div>
+            <div class="mb-3">
+                <label for="emailId" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailId" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dateOfBirth" placeholder="01-01-2000">
+            </div>
+            <div class="mb-3">
+                <label for="addressStd" class="form-label">Address</label>
+                <textarea class="form-control" id="addressStd" rows="3" placeholder="#25, Langford Road, Bengaluru - 27"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="genderStd" class="form-label">Gender</label>
+            <select class="form-select" id="genderStd" aria-label="Default select example">
+                <option selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+            <div class="mb-3">
+                <label for="categoryStd" class="form-label">Category</label>
+            <select class="form-select" id="categoryStd" aria-label="Default select example">
+                <option selected disabled>Select Category</option>
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+            </select>
+            </div>
+            <div class="mb-3">
+                <label for="shiftStd" class="form-label">Shift</label>
+            <select class="form-select" id="shiftStd" aria-label="Default select example">
+                <option selected disabled>Select Shift</option>
+                <option value="1">Shift-1</option>
+                <option value="2">Shift-2</option>
+                <option value="3">Shift-3</option>
+            </select>
+            </div>
+            <div class="mb-3">
+                <label for="ageStd" class="form-label">Age</label>
+                <input type="number" class="form-control" id="ageStd" placeholder="xx">
+            </div>
+            <div class="mb-3">
+                <label for="bloodGroup" class="form-label">Bloodgroup</label>
+            <select class="form-select" id="bloodGroup" aria-label="Default select example">
+                <option selected disabled>Select Bloodgroup</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            </div>
+            <div class="mb-3">
+                <label for="courseName" class="form-label">Course Name</label>
+                <input type="text" class="form-control" id="courseName" placeholder="BCA">
+            </div>
+            <div class="mb-3">
+                <label for="profilePhoto" class="form-label">Profile Photo</label>
+                <input type="file" class="form-control" id="profilePhoto">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+              </div>
+        </form>
+     </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid" style="background-color: var(--primary_blue)">
+      <div class="container text-light">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 mt-5"
+        >
+            <div class="d-flex gap-5 col mb-2">
+              <a
+                href="/"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img
+                  src="assets/icons/nss_logo.png"
+                  height="100"
+                  width="100"
+                  style="object-fit: contain"
+                />
+              </a>
+              <a
+                href="/"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img
+                  src="assets/icons/sju_logo.png"
+                  height="100"
+                  width="100"
+                  style="object-fit: contain"
+                />
+              </a>
+            </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Explore</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="home.html" class="nav-link p-0 text-light">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link p-0 text-light">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contact.html" class="nav-link p-0 text-light">Contact</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="announcements.html" class="nav-link p-0 text-light">Announcements</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Portal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="apply.html" class="nav-link p-0 text-light">Apply</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="login.html" class="nav-link p-0 text-light">Login</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="mb-2">
+                Phone: 12211122121
+              </li>
+              <li class="mb-2">
+                Email: <a href="mailto:nss@sju.edu.in" class="text-decoration-none text-light">nss@sju.edu.in</a>
+              </li>
+              <li class="mb-2">
+                Address: St Joseph's University, 36, Lalbagh Road, Bengaluru-560027, Karnataka, India.
+              </li>
+            </ul>
+          </div>
+          
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+          <p>&copy; 2025 St Joseph's University. All rights reserved.</p>
+          <div class="list-unstyled d-flex">
+            <a href="#"><img src="assets/icons/youtube.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/facebook.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/x_icon.svg" height="25" style="object-fit: contain; filter: invert(100%)"/></a>
+            <a href="#"><img src="assets/icons/instagram.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
