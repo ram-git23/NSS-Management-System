@@ -1,7 +1,7 @@
 :root {
   --primary_1: #ebebeb;
   --primary_blue: #322864;
-  --primary_yellow: #ff6334;
+  --primary_yellow: #ff4f34;
 }
 
 * {
@@ -25,19 +25,39 @@ body {
 }
 
 .nav-link.active.nav-item {
-  color: var(--primary_yellow);
-  font-weight: bolder;
+  background-color: var(--primary_yellow);
 }
 
-.navbar-nav a:hover,
+.navbar-nav a {
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
+}
+
+.navbar-nav a:hover {
+  background-color: var(--primary_yellow);
+  color: var(--primary_1) !important;
+}
+
 a.nav-link.p-0.text-light.d-inline:hover {
   color: var(--primary_yellow) !important;
 }
 
+.head-sju {
+  font-size: 2.7vw;
+}
 .head-nav {
   font-size: 2vw;
 }
 
 .navbar-toggler-icon {
   background: url("../icons/hamburger.svg") center contain;
+}
+
+.nav-item .dropdown-menu {
+  position: absolute;
+  right: 0;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
 }

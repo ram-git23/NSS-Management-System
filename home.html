@@ -57,7 +57,7 @@
         <!-- Text Section -->
         <div class="col-9">
           <div class="d-flex flex-column justify-content-around lh-1">
-            <div class="fw-bold head-nav">ST JOSEPH'S UNIVERSITY</div>
+            <div class="fw-bold head-sju">ST JOSEPH'S UNIVERSITY</div>
             <div class="fw-bold head-nav">ಸೇಂಟ್ ಜೋಸೆಫ್ ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
             <div class="head-nav" style="color: var(--primary_blue)">
               NATIONAL SERVICE SCHEME
@@ -80,7 +80,7 @@
     </header>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-sm navbar-dark"
+      class="navbar navbar-expand-sm navbar-dark p-0"
       style="background-color: var(--primary_blue)"
     >
       <div class="container-fluid d-flex justify-content-between">
@@ -99,22 +99,24 @@
 
         <!-- Collapsible Section for all links except LOGIN -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav me-auto">
-            <a class="nav-item nav-link active" aria-current="page" href="#"
+          <div class="navbar-nav d-flex mx-auto">
+            <a class="nav-item nav-link active" aria-current="page" href="home.html"
               >HOME</a
             >
             <a class="nav-item nav-link" href="about.html">ABOUT</a>
             <a class="nav-item nav-link" href="contact.html">CONTACT</a>
             <a class="nav-item nav-link" href="announcements.html">ANNOUNCEMENTS</a>
-          </div>
-          <div class="navbar-nav">
             <a class="nav-item nav-link" href="apply.html">APPLY</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LOGIN</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Student Login</a>
+                <a class="dropdown-item" href="#">Executive Login</a>
+                <a class="dropdown-item" href="#">Program Officer Login</a>
+                <a class="dropdown-item" href="#">Admin Login</a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <!-- Non-Collapsible Section for LOGIN (Right-aligned) -->
-        <div class="navbar-nav d-flex">
-          <a class="nav-item nav-link" href="login.html">LOGIN</a>
         </div>
       </div>
     </nav>
@@ -208,41 +210,42 @@
       community service.
     </div>
 
+    <!-- Logos below -->
+
+    <div class="d-flex justify-content-around mt-3 border-top py-2">
+      <a
+        href="/"
+        class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="assets/icons/nss_logo.png"
+          height="100"
+          width="100"
+          style="object-fit: contain"
+        />
+      </a>
+      <a
+        href="/"
+        class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="assets/icons/sju_logo.png"
+          height="100"
+          width="100"
+          style="object-fit: contain"
+        />
+      </a>
+    </div>
+
     <!-- Footer -->
 
     <div class="container-fluid" style="background-color: var(--primary_blue)">
       <div class="container text-light">
         <footer
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 mt-5"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-2"
         >
-            <div class="d-flex gap-5 col mb-2">
-              <a
-                href="/"
-                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="assets/icons/nss_logo.png"
-                  height="100"
-                  width="100"
-                  style="object-fit: contain"
-                />
-              </a>
-              <a
-                href="/"
-                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="assets/icons/sju_logo.png"
-                  height="100"
-                  width="100"
-                  style="object-fit: contain"
-                />
-              </a>
-            </div>
 
-          <div class="col mb-3"></div>
-
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>EXPLORE</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
@@ -260,7 +263,7 @@
             </ul>
           </div>
 
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>PORTAL</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
@@ -273,7 +276,7 @@
             </ul>
           </div>
 
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>CONTACT US</h5>
             <ul class="nav flex-column">
               <li class="mb-2">
@@ -289,7 +292,7 @@
           </div>
           
         </footer>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-1 mt-1 border-top">
           <p>&copy; 2025 St Joseph's University. All rights reserved.</p>
           <div class="list-unstyled d-flex">
             <a href="#"><img src="assets/icons/youtube.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>

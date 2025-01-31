@@ -9,9 +9,8 @@
     <style>
       a.nav2{
         color: var(--primary_1);
-      }
-      a.nav2:hover{
-        color: var(--primary_blue) !important;
+        background-color: var(--primary_blue);
+        margin-bottom: 2px;
       }
       a.nav2.active {
         color: var(--primary_blue) !important;
@@ -47,7 +46,7 @@
         <!-- Text Section -->
         <div class="col-9">
           <div class="d-flex flex-column justify-content-around lh-1">
-            <div class="fw-bold head-nav">ST JOSEPH'S UNIVERSITY</div>
+            <div class="fw-bold head-sju">ST JOSEPH'S UNIVERSITY</div>
             <div class="fw-bold head-nav">ಸೇಂಟ್ ಜೋಸೆಫ್ ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
             <div class="head-nav" style="color: var(--primary_blue)">
               NATIONAL SERVICE SCHEME
@@ -70,7 +69,7 @@
     </header>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-sm navbar-dark"
+      class="navbar navbar-expand-sm navbar-dark p-0"
       style="background-color: var(--primary_blue)"
     >
       <div class="container-fluid d-flex justify-content-between">
@@ -89,106 +88,138 @@
 
         <!-- Collapsible Section for all links except LOGIN -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav me-auto">
+          <div class="navbar-nav d-flex mx-auto">
             <a class="nav-item nav-link" href="home.html"
               >HOME</a
             >
-            <a class="nav-item nav-link active" href="#" aria-current="page">ABOUT</a>
+            <a class="nav-item nav-link active" aria-current="page" href="about.html">ABOUT</a>
             <a class="nav-item nav-link" href="contact.html">CONTACT</a>
             <a class="nav-item nav-link" href="announcements.html">ANNOUNCEMENTS</a>
-          </div>
-          <div class="navbar-nav">
             <a class="nav-item nav-link" href="apply.html">APPLY</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LOGIN</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Student Login</a>
+                <a class="dropdown-item" href="#">Executive Login</a>
+                <a class="dropdown-item" href="#">Program Officer Login</a>
+                <a class="dropdown-item" href="#">Admin Login</a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <!-- Non-Collapsible Section for LOGIN (Right-aligned) -->
-        <div class="navbar-nav d-flex">
-          <a class="nav-item nav-link" href="login.html">LOGIN</a>
         </div>
       </div>
     </nav>
 
-    <!-- Sub Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light nav2 p-0" style="background-color: var(--primary_yellow); opacity: 0.9;">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link nav2" href="mottosymbol.html">MOTTO AND SYMBOL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav2" href="objectives.html">OBJECTIVES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav2" href="nssvolunteer.html">NSS VOLUNTEER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav2" href="classification.html">CLASSIFICATION OF PROGRAMMES</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="d-flex flex-column flex-sm-row">
+      <!-- Sub Navbar -->
+      <nav class=" navbar navbar-light nav2 flex-column p-3" 
+      style="width: 250px; ">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav2" href="mottosymbol.html">MOTTO AND SYMBOL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav2" href="objectives.html">OBJECTIVES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav2" href="nssvolunteer.html">NSS VOLUNTEER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav2" href="classification.html">CLASSIFICATION OF PROGRAMMES</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <!-- Content  -->
-     <div class="container mt-4">
+  <!-- Content  -->
+   <div class="container mt-4">
+      <p>
+          <strong>NATIONAL SERVICE SCHEME (N.S.S)</strong>
+        </p>
+
         <p>
-            <strong>NATIONAL SERVICE SCHEME (N.S.S)</strong>
-          </p>
+          The National Service Scheme (NSS) is an Indian government-sponsored
+          public service program conducted by the Ministry of Youth Affairs
+          and Sports of the Government of India. Popularly known as NSS, the
+          scheme was launched in Gandhiji's Centenary year in 1969.&nbsp;
+        </p>
 
-          <p>
-            The National Service Scheme (NSS) is an Indian government-sponsored
-            public service program conducted by the Ministry of Youth Affairs
-            and Sports of the Government of India. Popularly known as NSS, the
-            scheme was launched in Gandhiji's Centenary year in 1969.&nbsp;
-          </p>
+        <p>
+          St Joseph's University has been continuously in NSS since its
+          inception with the major aim of providing opportunities to the
+          students to involve themselves in social activities and ultimately
+          developing their personality. It is also known to have one of the
+          oldest NSS units in Karnataka State, has completed 50 years,
+          reflecting the essence of democratic living and upholding the need
+          for selfless service empowering youth and promote national
+          integration.
+        </p>
 
-          <p>
-            St Joseph's University has been continuously in NSS since its
-            inception with the major aim of providing opportunities to the
-            students to involve themselves in social activities and ultimately
-            developing their personality. It is also known to have one of the
-            oldest NSS units in Karnataka State, has completed 50 years,
-            reflecting the essence of democratic living and upholding the need
-            for selfless service empowering youth and promote national
-            integration.
-          </p>
+        <p>
+          Service of faith and promotion of justice is a significant component
+          of Jesuit education across the globe. It is imperative that our
+          education need to make our students have a deep and profound faith
+          in themselves, in each other and the divine, which needs to be
+          realized in the promotion of justice for all, especially the last,
+          the least, and the lost who are on the periphery of society.
+          Ultimately we need to prepare students who serve the nation with
+          resolute devotion and single-minded commitment.
+        </p>
 
-          <p>
-            Service of faith and promotion of justice is a significant component
-            of Jesuit education across the globe. It is imperative that our
-            education need to make our students have a deep and profound faith
-            in themselves, in each other and the divine, which needs to be
-            realized in the promotion of justice for all, especially the last,
-            the least, and the lost who are on the periphery of society.
-            Ultimately we need to prepare students who serve the nation with
-            resolute devotion and single-minded commitment.
-          </p>
+        <p>
+          National Service Scheme is a voluntary organization of young
+          students that provides services to society without bias. It aims to
+          doctrine social welfare in students through community services.
+          Students are the building blocks of society. It is a proven fact
+          that organized group activities are potential enabling factors for
+          cognitive developments and enriching the spirit of brotherhood. We
+          at NSS, strive to achieve similar goals through activities which
+          have a direct impact on the society and environment at large
+        </p>
 
-          <p>
-            National Service Scheme is a voluntary organization of young
-            students that provides services to society without bias. It aims to
-            doctrine social welfare in students through community services.
-            Students are the building blocks of society. It is a proven fact
-            that organized group activities are potential enabling factors for
-            cognitive developments and enriching the spirit of brotherhood. We
-            at NSS, strive to achieve similar goals through activities which
-            have a direct impact on the society and environment at large
-          </p>
+        <p>
+          <strong>Year of NSS established</strong> : 24 September 1969<br />
+          <strong>Advisory committee chairman and Vice-chancellor</strong>:
+          Dr. Fr. Victor Lobo S.J,<br />
+          <strong>NSS Program Coordinator</strong>:
+          <a
+            href="https://sju.edu.in/faculty-details/st-joseph-university/computer-science-and-computer-application/NDYy"
+            target="_blank"
+            >Mr. Selwyn Paul. J</a
+          ><br />
+          <strong>No. of NSS units in college</strong>: 5<br/>
+          <strong>Email Id </strong>:
+          <a href="mailto:nss@sju.edu.in">nss@sju.edu.in</a>
+        </p>
+  </div>
+    </div>
 
-          <p>
-            <strong>Year of NSS established</strong> : 24 September 1969<br />
-            <strong>Advisory committee chairman and Vice-chancellor</strong>:
-            Dr. Fr. Victor Lobo S.J,<br />
-            <strong>NSS Program Coordinator</strong>:
-            <a
-              href="https://sju.edu.in/faculty-details/st-joseph-university/computer-science-and-computer-application/NDYy"
-              target="_blank"
-              >Mr. Selwyn Paul. J</a
-            ><br />
-            <strong>No. of NSS units in college</strong>: 5<br/>
-            <strong>Email Id </strong>:
-            <a href="mailto:nss@sju.edu.in">nss@sju.edu.in</a>
-          </p>
+    <!-- Logos below -->
+
+    <div class="d-flex justify-content-around mt-3 border-top py-2">
+      <a
+        href="/"
+        class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="assets/icons/nss_logo.png"
+          height="100"
+          width="100"
+          style="object-fit: contain"
+        />
+      </a>
+      <a
+        href="/"
+        class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="assets/icons/sju_logo.png"
+          height="100"
+          width="100"
+          style="object-fit: contain"
+        />
+      </a>
     </div>
 
     <!-- Footer -->
@@ -196,36 +227,10 @@
     <div class="container-fluid" style="background-color: var(--primary_blue)">
       <div class="container text-light">
         <footer
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 mt-5"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-2"
         >
-            <div class="d-flex gap-5 col mb-2">
-              <a
-                href="/"
-                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="assets/icons/nss_logo.png"
-                  height="100"
-                  width="100"
-                  style="object-fit: contain"
-                />
-              </a>
-              <a
-                href="/"
-                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="assets/icons/sju_logo.png"
-                  height="100"
-                  width="100"
-                  style="object-fit: contain"
-                />
-              </a>
-            </div>
 
-          <div class="col mb-3"></div>
-
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>EXPLORE</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
@@ -243,7 +248,7 @@
             </ul>
           </div>
 
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>PORTAL</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
@@ -256,7 +261,7 @@
             </ul>
           </div>
 
-          <div class="col mb-3">
+          <div class="col col-md-4 mb-1 mt-3">
             <h5>CONTACT US</h5>
             <ul class="nav flex-column">
               <li class="mb-2">
@@ -272,7 +277,7 @@
           </div>
           
         </footer>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-1 mt-1 border-top">
           <p>&copy; 2025 St Joseph's University. All rights reserved.</p>
           <div class="list-unstyled d-flex">
             <a href="#"><img src="assets/icons/youtube.svg" height="30" style="object-fit: contain; filter: invert(100%)"/></a>
